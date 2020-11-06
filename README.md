@@ -11,8 +11,9 @@ A file "HoleDetectionDataWithNormals.ply" containing the normals of the initial 
 The two last points in the file are the normals of the detected circle's centers.
 
 ## Build & Run program - Requirements
-- PCL version 1.2 or above installed
+- PCL version >=1.2 + 3d party libraries (Boost, Eigen...) installed
 - CMake
 
 Build the code using CMake, with Visual Studio 2015 generator and platform Win32.
 
+Note: The program assumes that solution was built in a folder /build inside the folder containing the CMake file. Ths is why the path for reading point cloud is "../data/HoleDetectionTestData.txt"
