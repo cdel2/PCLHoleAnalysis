@@ -2,10 +2,10 @@
 Detecting holes in a point cloud and giving measures such as radii, center and normal at the center with PCL Library.
 
 First, edges are detected by using ConcaveHull, then clustered using EuclideanClusterExtraction (see colors of the different clusters) :
-![PCLVisualization](img/PieceVisualization.png)
+![PCLVisualization](img/PieceVisualization.PNG)
 
 This enable to isolate 2 circles for computing metrics :
-![PCLVisualization](img/PieceMetrics.png)
+![PCLVisualization](img/PieceMetrics.PNG)
 
 A file "HoleDetectionDataWithNormals.ply" containing the normals of the initial cloud's points is then created.
 The two last points in the file are the normals of the detected circle's centers.
